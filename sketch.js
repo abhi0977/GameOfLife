@@ -31,7 +31,11 @@ function draw() {
 
     for(let i = 0; i < rows; i++){
         for(let j = 0; j < columns; j++){
-            rect(i * cellWidth, j * cellWidth, cellWidth, cellWidth)
+            if(grid[i][j]){
+                fill(255);
+                stroke(0);
+                rect(i * cellWidth, j * cellWidth, cellWidth, cellWidth);
+            }
         }
     }
 }

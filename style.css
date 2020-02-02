@@ -1,8 +1,29 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
 }
 
 canvas {
   display: block;
+}
+
+.container{
+  display: flex;
+}
+.fixed{
+  width: auto;
+}
+.flex-item{
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.card{
+  width: 96%;
+  display: block;
+  height: 97%;
+  padding: 10px;
+  border-radius: 10px
 }

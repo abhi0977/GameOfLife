@@ -5,12 +5,47 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <meta charset="utf-8" />
+  <script src="sketch.js"></script>
 </head>
+<title>Conway's Game of Life</title>
 
 <body>
-  <script src="sketch.js"></script>
+
+  <div class="container">
+    <div id="sketch-holder" class="fixed"></div>
+    <div class="flex-item">
+      <div class="card">
+        <p style="text-align: center"><strong>Conway's Game of Life</strong></p>
+        <p>The universe of the <i>Game of Life</i> is an infinite, two-dimensional <a
+            href="https://en.wikipedia.org/wiki/Orthogonality" title="Orthogonality">orthogonal</a> grid of square
+          <i>cells</i>, each of which is in one of two possible
+          states, <i>alive</i> or <i>dead</i>, (or <i>populated</i> and <i>unpopulated</i>, respectively). Every cell
+          interacts with its eight <i><a href="https://en.wikipedia.org/wiki/Moore_neighborhood"
+              title="Moore neighborhood">neighbours</a></i>,
+          which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the
+          following transitions occur:
+        </p>
+
+        <ol>
+          <li>Any live cell with fewer than two live neighbours dies, as if by underpopulation.</li>
+          <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+          <li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
+          <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+        </ol>
+
+        <iframe src="https://www.youtube.com/embed/CgOcEZinQ2I">
+        </iframe>
+        </br>
+        <a class="github-button" href="https://github.com/abhi0977/GameOfLife" data-size="large"
+          aria-label="Star abhi0977/GameOfLife on GitHub">Star</a>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
